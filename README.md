@@ -8,7 +8,9 @@ Jogo de adivinhação no navegador: o jogador tenta descobrir o número secreto 
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
-[![Demonstração online](https://img.shields.io/badge/demonstra%C3%A7%C3%A3o-online-2EA44F?style=flat-square)](https://otavio-2507.github.io/Numero-Secreto/)
+![Prévia do projeto](img/preview.jpg)
+
+**[Ver Projeto](https://otavio-2507.github.io/Numero-Secreto/)**
 
 </div>
 
@@ -24,6 +26,14 @@ Projeto de lógica de programação com JavaScript: a cada rodada um número ale
 - Contagem de tentativas exibida ao vencer
 - Botão de nova partida habilitado apenas após o acerto
 - Interface responsiva com tipografia temática
+
+## Decisões de projeto
+
+Algumas escolhas que não são óbvias pelo código:
+
+**A lista de sorteados zera ao esgotar o intervalo.**  guarda os números já usados e se chama de novo quando repete, para que duas partidas seguidas não tenham o mesmo segredo. Sem o reset ao encher a lista, a partida seguinte à última entraria em recursão infinita procurando um inédito que acabou.
+
+**A fala não é um recurso à parte.**  escreve no DOM e sintetiza o mesmo texto na mesma chamada, então tela e áudio não têm como divergir — não existe caminho no código que atualize um sem o outro.
 
 ## Tecnologias
 

@@ -31,9 +31,9 @@ Projeto de lógica de programação com JavaScript: a cada rodada um número ale
 
 Algumas escolhas que não são óbvias pelo código:
 
-**A lista de sorteados zera ao esgotar o intervalo.**  guarda os números já usados e se chama de novo quando repete, para que duas partidas seguidas não tenham o mesmo segredo. Sem o reset ao encher a lista, a partida seguinte à última entraria em recursão infinita procurando um inédito que acabou.
+**A lista de sorteados zera ao esgotar o intervalo.** `gerarNumeroAleatorio` guarda os números já usados e chama a si mesma quando repete, para que duas partidas seguidas não tenham o mesmo segredo. Sem o reset ao encher a lista, a partida seguinte à última entraria em recursão infinita procurando um inédito que acabou.
 
-**A fala não é um recurso à parte.**  escreve no DOM e sintetiza o mesmo texto na mesma chamada, então tela e áudio não têm como divergir — não existe caminho no código que atualize um sem o outro.
+**A fala não é um recurso à parte.** `exibirTextoNaTela` escreve no DOM e sintetiza o mesmo texto na mesma chamada, então tela e áudio não têm como divergir: não existe caminho no código que atualize um sem o outro.
 
 ## Tecnologias
 

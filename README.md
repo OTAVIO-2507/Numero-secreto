@@ -10,7 +10,8 @@ Jogo de adivinhação no navegador: o jogador tenta descobrir o número secreto 
 
 ![Prévia do projeto](img/preview.jpg)
 
-**[Ver Projeto](https://otavio-2507.github.io/Numero-Secreto/)**
+[![Ver projeto](https://img.shields.io/badge/Ver_projeto-3642B5?style=for-the-badge&logo=googlechrome&logoColor=white)](https://otavio-2507.github.io/Numero-Secreto/)
+[![Código](https://img.shields.io/badge/C%C3%B3digo-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/OTAVIO-2507/Numero-Secreto)
 
 </div>
 
